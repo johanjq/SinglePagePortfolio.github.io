@@ -1,6 +1,15 @@
 html,
 body {
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+  color: #423d3f; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #0b3757; }
 
 h1 {
   font-size: 70px;
@@ -16,6 +25,12 @@ p {
   line-height: 1.6;
   margin: 20px 0; }
 
+a {
+  color: #9acff6;
+  text-decoration: underline; }
+  a:hover, a:active, a:focus {
+    color: #54aef0; }
+
 .dark-content {
   color: #fff; }
   .dark-content h1,
@@ -26,6 +41,8 @@ p {
   .dark-content h6,
   .dark-content p {
     color: #fff; }
+  .dark-content .img-circle {
+    border-radius: 50%; }
 
 .hero-unit {
   background: url("../img/hero-unit-background-desktop.jpg");
@@ -69,3 +86,70 @@ p {
     background: -o-linear-gradient(left, #45a247, #283c86);
     background: linear-gradient(to right, #45a247, #283c86);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+
+.content-section {
+  padding: 50px; }
+  .content-section.content-section-centered {
+    text-align: center; }
+  .content-section.dark-content {
+    background: #303b48; }
+  .content-section.content-section-side-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding: 0; }
+    .content-section.content-section-side-image .content-section-side-image-content {
+      -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      padding: 50px 0; }
+    .content-section.content-section-side-image .content-section-side-image-container {
+      width: 250px;
+      min-height: 500px;
+      background-size: cover;
+      background-position: center; }
+
+@media only screen and (max-width: 576px) {
+  .content-section.content-section-side-image {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .content-section.content-section-side-image .content-section-side-image-container {
+      min-height: 80px;
+      width: 100%; }
+    .content-section.content-section-side-image .content-section-side-image-heading {
+      text-align: center; } }
+
+.portofolio-cards {
+  margin-top: 60px; }
+  .portofolio-cards .portofolio-card {
+    background: #fff;
+    -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 30px; }
+  .portofolio-cards .portofolio-card-image {
+    background-size: cover;
+    background-position: center;
+    height: 200px; }
+  .portofolio-cards .portofolio-card-information {
+    padding: 25px 5px; }
+  .portofolio-cards .portofolio-card-title {
+    display: block;
+    font-size: 20px;
+    letter-spacing: -0.063rem;
+    margin-bottom: 5px;
+    font-weight: 600; }
+  .portofolio-cards .portofolio-card-credits {
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.063rem;
+    text-transform: uppercase;
+    color: #a7a7a7; }
