@@ -17,11 +17,10 @@
       crossorigin="anonymous"
     />
     <link
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-      rel="stylesheet"
-      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-      crossorigin="anonymous"
-    />
+      rel="stylesheet" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" 
+      integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=" 
+      crossorigin="anonymous" />
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i&display=swap"
       rel="stylesheet"
@@ -49,7 +48,7 @@
         </div>
       </div>
     </section>
-    <section class="content-section content-section-centered">
+    <section id="portofolio-section" class="content-section content-section-centered">
       <div class="container">
         <div class="row">
           <div class="col">
@@ -120,9 +119,8 @@
                 Who am I?
               </h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Vestibulum quis turpis non risus imperdiet feugiat et vel eros.
-                Sed at accumsan sapien, at venenatis libero.
+                I am a computer science graduated seeking for new oportunities in the Web Development field,
+                I am very familiar with React and Front-End Side frameworks.
               </p>
               <p>
                 Nullam dictum sodales sem, ut dictum risus congue sit amet.
@@ -137,7 +135,7 @@
                 Morbi at ligula sed nunc egestas ornare vitae in orci. Quisque
                 arcu elit, faucibus ut urna a, iaculis tincidunt dolor.
               </p>
-              <p>To see my full range of skills, <a href="#">click here.</a></p>
+              <p>To see my full range of skills, <a href="#" data-toggle="modal" data-target="#skills-modal">click here.</a></p>
             </div>
           </div>
         </div>
@@ -147,6 +145,87 @@
         style="background-image:url('img/who-am-i-desktop.jpg')"
       ></div>
     </section>
+    <section class="content-section content-section-centered">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2>Get in touch</h2>
+            <p>Say hello or ask me <em>anything</em>. I'm always happy to help.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="offset-sm-3 col-sm-6">
+            <form class="contact-form" action="https://formspree.io/johan.atp@hotmail.com" method="POST">
+              <input class="contact-form-input" type="text" name="name" placeholder="Name" value="" required>
+              <input class="contact-form-input" type="email" name="email" placeholder="Email" value="" required>
+              <input class="contact-form-input" type="text" name="phone_number" placeholder="Phone Number" value="" required>
+              <textarea class="contact-form-input" placeholder="Your Query..." name="query"></textarea>
+              <div class="contact-form-actions">
+                <input class="contact-form-checkbox-input" id="consent" type="checkbox" name="consent" value="1" required>
+                <label class="contact-form-checkbox-label" for="consent" >
+                  I agree to receive a direct response to my enquery via the contact details I provided above.
+                </label>
+                <button class="btn btn-primary btn-block" type="submit">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      &copy; Johan Quiroz - 2019
+    </footer>
+    <!-- Modal -->
+    <div class="modal fade" id="skills-modal" tabindex="-1" role="dialog" aria-labelledby="skills-modal-label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="skills-modal-label">All my Skillsets</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p class="mt-1">Here you can see my current skills, updated as of <strong>August 2019.</strong></p>
+            <div class="skillsets">
+              <div class="skillset">
+                <h3 class="skillset-heading">HTML</h3>
+                <div class="progress">
+                  <div class="progress-bar bg-primary" role="progressbar" style="width: 85%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Proeficient</div>     
+                </div>
+              </div>
+              <div class="skillset">
+                <h3 class="skillset-heading">CSS</h3>
+                <div class="progress">
+                  <div class="progress-bar bg-primary" role="progressbar" style="width: 70%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">High intermediate</div>     
+                </div>
+              </div>
+              <div class="skillset">
+                <h3 class="skillset-heading">JavaScript</h3>
+                <div class="progress">
+                  <div class="progress-bar bg-primary" role="progressbar" style="width: 56%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Intermediate</div>     
+                </div>
+              </div>
+              <div class="skillset">
+                <h3 class="skillset-heading">React</h3>
+                <div class="progress">
+                  <div class="progress-bar bg-primary" role="progressbar" style="width: 80%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Advanced</div>     
+                </div>
+              </div>
+              <div class="skillset">
+                <h3 class="skillset-heading">jQuery</h3>
+                <div class="progress">
+                  <div class="progress-bar bg-primary" role="progressbar" style="width: 86%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Proficient</div>     
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
   </body>
 </html>
