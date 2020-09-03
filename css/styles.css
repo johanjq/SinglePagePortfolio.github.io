@@ -322,6 +322,9 @@ a:hover, a:active, a:focus {
   letter-spacing: 2.4px;
   margin-bottom: 45px;
 }
+.About__MainContent .hero-unit-subheading2 a {
+  text-decoration: none;
+}
 
 .About__ProfilePhoto {
   text-align: right;

@@ -1,6 +1,6 @@
 .About__Wrapper {
-display: grid;
-grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 .About__MainContent {
     margin: 12rem auto;
@@ -16,15 +16,20 @@ grid-template-columns: 1fr 1fr;
         letter-spacing: 2.4px;
         margin-bottom: 45px;
     }
+    .hero-unit-subheading2 {
+        a {
+            text-decoration: none;
+        }
+    }
 }
 .About__ProfilePhoto {
-text-align: right;
+    text-align: right;
 }
 
 .About__ProfilePhoto img {
-max-width: 90%;
-height: auto;
-width: auto\9; /* ie8 */
+    max-width: 90%;
+    height: auto;
+    width: auto\9; /* ie8 */
 }
 @media (max-width: 700px) {
     .About__Wrapper {
@@ -42,9 +47,9 @@ width: auto\9; /* ie8 */
             font-size: 40px;
         }
         .hero-unit-subheading {
-        font-size: 14px;
+            font-size: 14px;
         }
-        .hero-unit-subheading2{
+        .hero-unit-subheading2 {
             padding: 0 1em;
         }
     }
